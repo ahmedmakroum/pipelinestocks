@@ -1,0 +1,21 @@
+{
+    "project": "arcane-boulder-429415-s1",
+    "stagingLocation": "gs://sportsdata1/staging/",
+    "tempLocation": "gs://sportsdata1/temp/",
+    "region": "us-central1",
+    "runner": "DataflowRunner",
+    "inputFile": "gs://sportsdata1/stocks_data.csv",
+    "outputTableSpec": "arcane-boulder-429415-s1:your_dataset.your_table",
+    "schema": {
+      "fields": [
+        {"name": "symbol", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "name", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "currency", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "exchange", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "mic_code", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "country", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "type", "type": "STRING", "mode": "NULLABLE"}
+      ]
+    }
+  }
+  
