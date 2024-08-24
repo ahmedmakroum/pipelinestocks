@@ -1,4 +1,5 @@
 Finance Data Pipeline Project
+
 This project is a data pipeline designed to automate the extraction, processing, and storage of financial data. The pipeline is built using Apache Airflow, and it interacts with the Twelve Data API to fetch stock market data, process it into a CSV format, and store it in a Google Cloud Storage (GCS) bucket.
 
 Table of Contents
@@ -32,11 +33,13 @@ API Key from Twelve Data API.
 Steps
 Clone the Repository:
 
+
 bash
 Copy code
-git clone https://github.com/yourusername/finance-data-pipeline.git
+git clone https://github.com/ahmedmakroum/pipelinestocks.git
 cd finance-data-pipeline
 Install Python Dependencies:
+
 
 
 Copy code
@@ -45,6 +48,7 @@ Set Up Airflow:
 
 Place the dag.py script in your Airflow DAGs directory.
 Start the Airflow scheduler and web server:
+
 
 Copy code
 airflow scheduler
@@ -56,10 +60,12 @@ Update the bucket name in dag.py to match your GCS bucket.
 Usage
 Triggering the DAG:
 
+
 Access the Airflow web UI at http://localhost:8080.
 Locate the finance_data_pipeline DAG.
 Trigger the DAG manually or set it to run on a schedule.
 Monitoring:
+
 
 Monitor the DAG's execution from the Airflow UI to ensure tasks are running as expected.
 Check the GCS bucket to verify that the CSV files are being uploaded correctly.
