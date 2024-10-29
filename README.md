@@ -1,6 +1,6 @@
 Finance Data Pipeline Project
 
-This project is a data pipeline designed to automate the extraction, processing, and storage of financial data. The pipeline is built using Apache Airflow, and it interacts with the Twelve Data API to fetch stock market data, process it into a CSV format, and store it in a Google Cloud Storage (GCS) bucket.
+This project is a data pipeline designed to automate the extraction, processing, and storage of financial data. The pipeline is built using Dataflow, and it interacts with the Twelve Data API to fetch stock market data, process it into a CSV format, and store it in a Google Cloud Storage (GCS) bucket.
 
 Table of Contents
 Project Overview
